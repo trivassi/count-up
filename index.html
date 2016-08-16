@@ -6,11 +6,34 @@
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
 
-    <title></title>
+    <title>Count Up By</title>
   </head>
   <body>
     <div class="container">
-
+      <div class="jumbotron">
+      <h1>Input two numbers</h1>
+      <p>
+        One to count to and another to determine what multiple to use to get there.
+      </p>
+      </div>
+      <form id="numbers">
+        <div class="form-group">
+        <label for="count-until">Count until:</label>
+        <input id="count-until" class="form-control" type="number" required>
+        </div>
+        <div class="form-group">
+        <label for="count-by">Count by:</label>
+        <input id="count-by" class="form-control" type="number" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit!</button>
+      </form>
+    </div>
+    <div class="container display-result">
+      <ul>
+        <li>Count to: <span id="display-count-to"></span></li>
+        <li>Count by: <span id="display-count-by"></span></li>
+        <li>Output: <span id="display-output"></span></li>
+      </ul>
     </div>
   </body>
 </html>
